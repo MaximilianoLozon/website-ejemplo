@@ -1,0 +1,51 @@
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact__options{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.contact__option{
+    width: 250px;
+    color: var(--color-white);
+    background: var(--color-background);
+    border-radius: 10%;
+    text-align: center;
+}
+.contact__option:hover{
+    background: transparent;
+    border-color: transparent;
+}
+.contact__option-icon{
+    font-size: 5rem;
+    margin-bottom: 0.5;
+}
+.contact__option:nth-child(1):hover{
+    background: var(--fondo-instagram);
+}
+.contact__option:nth-child(2):hover{
+    background: var(--fondo-whatsapp);
+}
+.contact__option:nth-child(3):hover{
+    background: var(--fondo-face-linked);
+}
+.contact__option a{
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    display: inline-block;
+}
+
+/* media queries : medium*/
+@media screen and (max-width: 900px) {
+   .contact__options{
+    flex-direction: column;
+   }
+}
+/* media queries : small*/
